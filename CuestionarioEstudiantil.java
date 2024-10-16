@@ -14,7 +14,7 @@ public class CuestionarioEstudiantil {
         int FamiliaNumerosaOMonoparental;
         int FamiliarEscolarizadoEnLaEscuela;
 
-        int Puntuacion;
+        int Puntuacion = 0;
 
 
 
@@ -74,12 +74,12 @@ public class CuestionarioEstudiantil {
             // un if que comprueba si los dos hechos se dan.
 
         if (PadresTrabajanEnLaPoblacion == 1 && MismaPoblacion == 1) {
-            Puntuacion =+ 30;
+            Puntuacion += 30;
         } else {
-            Puntuacion =+ PadresTrabajanEnLaPoblacion*20 + MismaPoblacion*30;
+            Puntuacion += PadresTrabajanEnLaPoblacion*20 + MismaPoblacion*30;
         }
 
-        Puntuacion =+ HermanoEnElCentro*40 + Discapacidad*10 + FamiliaNumerosaOMonoparental*15 + FamiliarEscolarizadoEnLaEscuela*5;
+        Puntuacion += HermanoEnElCentro*40 + Discapacidad*10 + FamiliaNumerosaOMonoparental*15 + FamiliarEscolarizadoEnLaEscuela*5;
 
 
 
